@@ -33,5 +33,9 @@ class SimpleMathJax {
 	private static function renderTex($tex, $parser) {
 		return ["<span style='opacity:0.5'>[math]${tex}[/math]</span>", 'markerType'=>'nowiki'];
 	}
+
+        public static function onBeforePageDisplayMobile( OutputPage &$out, Skin &$sk ) {
+                $out->addScriptFile( '/mediawiki' . '/extensions/SimpleMathJax/modules/ext.SmjCDN.mobile.js' );
+        }
 }
 

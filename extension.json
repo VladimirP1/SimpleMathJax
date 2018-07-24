@@ -26,6 +26,9 @@
 		"localBasePath": "modules",
 		"remoteExtPath": "SimpleMathJax/modules"
 	},
+        "Hooks": {                                                                                                     │        "manifest_version": 1
+                "BeforePageDisplayMobile": "SimpleMathJax::onBeforePageDisplayMobile"                                  │}
+        },
 	"manifest_version": 1
 }
 
